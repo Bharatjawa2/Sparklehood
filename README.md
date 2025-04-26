@@ -16,6 +16,16 @@ It supports creating, fetching, and deleting incident reports with different sev
 
 ---
 
+## API's
+
+- POST
+    http://localhost/api/v2/incident/post
+- Get
+    http://localhost/api/v2/incident/get/all
+    http://localhost/api/v2/incident/get/:id
+- Delete
+    http://localhost/api/v2/incident/delete/:id
+
 ## 🚀 Features
 
 - **Post Incident**: Create a new incident report
@@ -42,7 +52,12 @@ PORT=4000
 MONGODB_URL=your_mongodb_connection_url
 ```
 
-3.Run the server
+3.Seeding (Dummy Data)
+```bash
+ node seed.js
+```
+
+4.Run the server
 ```bash
 nodemon server.js
 ```
